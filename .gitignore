@@ -1,1 +1,8 @@
 mongod.log
+__pycache__/*
+airflow/*
+.vscode/*
+env/*
+__pycache__/*
+.DS_Store
+data/db/* 
