@@ -1,0 +1,7 @@
+__pycache__/car_factory_simulation.cpython-37.pyc __pycache__/check_db.cpython-37.pyc __pycache__/etl.cpython-37.pyc __pycache__/garden_dags.cpython-37.pyc __pycache__/garden_test.cpython-37.pyc
+airflow/*
+.vscode/*
+env/*
+__pycache__/*
+.DS_Store
+data/db/*
