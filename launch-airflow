@@ -1,0 +1,6 @@
+#!/bin/bash
+# Start airflow webserver at port 8080
+airflow webserver -p 8080 -D
+
+## Start airflow scheduler
+airflow scheduler

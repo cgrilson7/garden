@@ -3,9 +3,8 @@ Automated, intelligent gardening support system serving as groundhog deterrent, 
 
 ## Requirements
 
-- Python 3.7
-
-- `venv` for package management
+- **Python 3.7**
+  - `venv` for package/environment management
 
 - Pseudo-distributed **Airflow** environment configured with **PostgreSQL** (and `pscyopg2+postgresql` driver) for DAG management.
   - `$AIRFLOW_HOME` set to `garden/airflow` directory, containing `dags` folder. See `airflow/airflow.cfg` for example configuration. 
@@ -25,13 +24,9 @@ Automated, intelligent gardening support system serving as groundhog deterrent, 
 # Load secrets
 export OPENWEATHER_API_KEY=[your API key]
 export AIRFLOW_HOME=/path/to/garden/airflow/
-
-# Start mongod in daemon mode, using mongod.conf file in root directory of this project
-mongod --config mongod.conf
-
-# Start airflow webserver at port 8080
-airflow webserver -p 8080 -D
-
-## Start airflow scheduler
-airflow scheduler
 ```
+
+- To run all processes:
+  - `source env/bin/activate`
+  - `./launch-airflow`
+  - `./launch-mongod`

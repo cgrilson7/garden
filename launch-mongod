@@ -1,0 +1,3 @@
+#!/bin/bash
+# Start mongod in daemon mode, using mongod.conf file in root directory of this project
+mongod --config mongod.conf
